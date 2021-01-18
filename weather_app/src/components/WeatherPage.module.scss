@@ -1,0 +1,117 @@
+@import "../normalize.css";
+*{
+    font-family: "Lato", sans-serif;
+}
+.wrapper{
+    background-color: #498CEC;
+    width: 100%;
+
+    .header{
+        margin:0px 99px 0px 99px;
+        padding-top: 75px;
+        display: flex;
+        justify-content:space-between;
+
+        .cityWrapper{
+            font-family: "Lato", sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 50px;
+            line-height: 60px;
+            color: #FFFFFF;
+            margin-bottom: 186px;
+
+            .city{
+                margin-bottom: 9px;
+            }
+
+            .city_descr{
+                display: flex;
+                font-family: "Lato", sans-serif;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 18px;
+                line-height: 22px;
+                color: #FFFFFF;
+                mix-blend-mode: normal;
+                opacity: 0.6;
+
+                div{
+                    margin-right: 25px;
+                }
+
+                .img{
+                    display: inline-block;
+                    width: 30px;
+                    position: relative;
+                }
+                img{
+                    width: 25px;
+                    position: absolute;
+                    top:-18px;
+                    left: 25px;
+                    opacity: 1;
+                }
+
+            }
+
+        }
+
+    }
+
+    .content{
+        display: flex;
+        justify-content: center;
+
+        img{
+            width: 200px;
+            height: 200px;
+        }
+
+        .deg{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 180px;
+            line-height: 216px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+
+    .descr{
+        margin-top: 10px;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        line-height: 30px;
+        text-align: center;
+        color: #FFFFFF;
+        margin-bottom: 218px;
+    }
+
+    .bottom{
+        display: flex;
+        justify-content: space-between;
+        margin: 0px 185px 0px 100px;
+        padding-bottom: 122px;
+
+
+        &__item{
+            font-size: 18px;
+            line-height: 22px;
+            color: #FFFFFF;
+            mix-blend-mode: normal;
+            color:rgba(255,255,255,0.6);
+            
+            .info{
+                font-size: 25px;
+                line-height: 30px;
+                color: #FFFFFF;
+                opacity: 1;
+
+                
+            }
+        }
+    }
+}
+
