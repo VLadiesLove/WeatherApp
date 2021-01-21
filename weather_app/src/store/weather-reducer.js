@@ -11,14 +11,13 @@ let initialState = {
         deg: "240"
     },
     weather:[{
-        main: "снег",
-        description: "Light snow"
+        main: "Clear",
+        description: "ясно"
     }]
 
 }
 
 const weatherReducer = (state = initialState, action) => {
-    debugger
     switch (action.type) {
         case "SET_DATA": {
             return {

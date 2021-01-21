@@ -1,10 +1,11 @@
-@import "../normalize.css";
+
 *{
     font-family: "Lato", sans-serif;
 }
 .wrapper{
     background-color: #498CEC;
     width: 100%;
+    overflow: hidden;
 
     .header{
         margin:0px 99px 0px 99px;
@@ -14,8 +15,6 @@
 
         .cityWrapper{
             font-family: "Lato", sans-serif;
-            font-style: normal;
-            font-weight: normal;
             font-size: 50px;
             line-height: 60px;
             color: #FFFFFF;
@@ -28,8 +27,6 @@
             .city_descr{
                 display: flex;
                 font-family: "Lato", sans-serif;
-                font-style: normal;
-                font-weight: normal;
                 font-size: 18px;
                 line-height: 22px;
                 color: #FFFFFF;
@@ -58,6 +55,41 @@
         }
 
     }
+@media (max-width:768px){
+    .header{
+        margin:0px 34px 0px 19px;
+        padding-top: 19px;
+        justify-content: start;
+        .cityWrapper{
+            margin-bottom: 76px;
+        }
+    }
+
+    
+    .city_descr{
+        display: flex;
+        justify-content: space-between;
+        font-size: 15px;
+
+        div{
+            margin-right: 5px;
+        }
+    }
+    .switcher{
+        margin-left: -128px;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width:376px){
+    .switcher{
+        margin-left: -200px;
+    }
+    .city_descr{
+        width: 98%;
+    }
+}
 
     .content{
         display: flex;
@@ -69,8 +101,6 @@
         }
 
         .deg{
-            font-style: normal;
-            font-weight: normal;
             font-size: 180px;
             line-height: 216px;
             text-align: center;
@@ -89,12 +119,33 @@
         margin-bottom: 218px;
     }
 
+    @media (max-width:768px){
+     .content{
+         align-items: center;
+         img{
+             width: 100px;
+             height: 100px;
+         }
+         .deg{
+             font-size: 120px;
+             font-family: "PT Sans", sans-serif;
+         }
+     } 
+        .descr{
+            margin-top: -20px;
+            margin-bottom: 120px;
+        }
+    
+    }
+
+    
+
     .bottom{
         display: flex;
         justify-content: space-between;
         margin: 0px 185px 0px 100px;
         padding-bottom: 122px;
-
+        flex-wrap: wrap;
 
         &__item{
             font-size: 18px;
@@ -110,6 +161,17 @@
                 opacity: 1;
 
                 
+            }
+        }
+    }
+
+    @media (max-width:768px){
+        .bottom{
+            margin: 0px 5px 0px 5px;
+            padding-bottom: 50px;
+            &__item{
+                width: 50%;
+                margin-bottom: 20px;
             }
         }
     }
